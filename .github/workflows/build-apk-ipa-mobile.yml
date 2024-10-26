@@ -201,7 +201,7 @@ jobs:
     - name: Flet Build APK
       run: |
         flutter config --no-analytics
-        flet build apk --verbose --build-number=$BUILD_NUMBER --build-version=$BUILD_VERSION --include-packages flet_permission_handler
+        flet build apk --include-packages flet_permission_handler
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4.3.4
